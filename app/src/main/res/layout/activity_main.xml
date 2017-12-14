@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#ffffff"
+    android:layout_centerInParent="true"
+    >
+    <EditText
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên ứng dụng"
+        android:id="@+id/edTim"/>
+
+    <LinearLayout
+        android:layout_below="@id/edTim"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/btnchonbutton">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:id="@+id/btn1"
+            android:onClick="btn1Click"
+            android:src="@drawable/twitter"
+            android:background="@drawable/twitter"
+            android:text="find application"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btn2Click"
+            android:textColor="#ffffff"
+            android:text="find file"
+            android:src="@drawable/twitter"
+            android:background="@drawable/twitter"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/boder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/layoutParent"
+        android:layout_below="@id/btnchonbutton"
+        android:layout_above="@+id/btnTim">
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+
+        android:backgroundTint="#6b6b6b"
+        android:background="@drawable/voice"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnTim"/>
+</RelativeLayout>
