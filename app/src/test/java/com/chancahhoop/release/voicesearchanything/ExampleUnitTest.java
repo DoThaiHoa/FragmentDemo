@@ -1,4 +1,4 @@
-package com.example.hoadt.fragmentdemo;
+package com.chancahhoop.release.voicesearchanything;
 
 import org.junit.Test;
 

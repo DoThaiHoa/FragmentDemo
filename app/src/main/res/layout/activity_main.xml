@@ -2,64 +2,89 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
     android:background="#ffffff"
-    android:layout_centerInParent="true"
-    >
+    android:layout_centerInParent="true">
     <EditText
 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="Nhập tên ứng dụng"
+        android:hint="Search..."
         android:id="@+id/edTim"/>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_margin="10dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:tint="#6b6b6b"
+        android:layout_alignTop="@+id/edTim"
+        android:layout_alignBottom="@+id/edTim"
+        android:layout_alignRight="@+id/edTim"
+        android:src="@drawable/find" />
 
-    <LinearLayout
-        android:layout_below="@id/edTim"
+    <!--<LinearLayout-->
+        <!--android:layout_below="@id/edTim"-->
+        <!--android:background="@drawable/boder"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:id="@+id/btnchonbutton">-->
+        <!--&lt;!&ndash;-->
+        <!--&ndash;&gt;-->
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/btnchonbutton">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#ffffff"
-            android:id="@+id/btn1"
-            android:onClick="btn1Click"
-            android:src="@drawable/twitter"
-            android:background="@drawable/twitter"
-            android:text="find application"/>
+            <!--android:id="@+id/btn1"-->
+            <!--android:onClick="btn1Click"-->
+            <!--android:background="#ffffff"-->
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="btn2Click"
-            android:textColor="#ffffff"
-            android:text="find file"
-            android:src="@drawable/twitter"
-            android:background="@drawable/twitter"/>
-    </LinearLayout>
+            <!--android:text="APP"/>-->
 
-    <LinearLayout
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="btn2Click"-->
+            <!--android:background="#ffffff"-->
+            <!--android:text="FILE"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+    <android.support.v4.view.ViewPager
         android:background="@drawable/boder"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:id="@+id/layoutParent"
-        android:layout_below="@id/btnchonbutton"
+        android:id="@+id/viewPager"
+        android:layout_below="@id/edTim"
         android:layout_above="@+id/btnTim">
 
 
-    </LinearLayout>
+    </android.support.v4.view.ViewPager>
     <Button
-        android:layout_width="70dp"
-        android:layout_height="100dp"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
 
         android:backgroundTint="#6b6b6b"
         android:background="@drawable/voice"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:id="@+id/btnTim"/>
+    <ImageView
+        android:id="@+id/btnLeft"
+        android:layout_width="15dp"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/left"/>
+    <ImageView
+        android:id="@+id/btnRight"
+        android:layout_width="15dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/right"/>
 </RelativeLayout>

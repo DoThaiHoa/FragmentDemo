@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<TextView
+    android:id="@+id/txtApp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textFilter"
+    android:text=" App: "/>
+
+
+<TextView
+android:id="@+id/txtSLApp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:inputType="textFilter"
+android:text="0"/>
+
+
+<TextView
+android:id="@+id/txtFile"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:inputType="textFilter"
+android:text=" File: "/>
+
+
+<TextView
+android:id="@+id/txtSLFile"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:inputType="textFilter"
+android:text="0"/>
+
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.hoadt.fragmentdemo;
+package com.chancahhoop.release.voicesearchanything;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
